@@ -1,0 +1,28 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы с PHP</title>
+</head>
+<body>
+    <h2>Форма для отправки данных в базу данных:</h2>
+    <form action="submit_form.php" method="post">
+        <input type="text" name="first_name" placeholder="Имя" required>
+        <br>
+        <input type="text" name="last_name" placeholder="Фамилия" required>
+        <br>
+        <input type="text" name="nickname" placeholder="Никнейм" required>
+        <br>
+        <input type="email" name="email" placeholder="Почта" required>
+        <br>
+        <input type="tel" name="phone" placeholder="Номер телефона" required>
+        <br>
+        <input type="password" name="password" placeholder="Пароль" required>
+        <br>
+        <button type="submit">Отправить данные в базу данных</button>
+    </form>
+
+    <h2>Отображение результатов выполнения PHP-скрипта:</h2>
+    <iframe src="submit_form.php"></iframe>
+</body>
+</html>
